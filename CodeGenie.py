@@ -13,8 +13,7 @@ import openai
 
 # Load environment variables
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 # Page setup
 st.set_page_config(page_title="CodeClarity – AI Code Analyzer", layout="wide")
 st.title("🧠 CodeClarity – AI Code Analyzer")
